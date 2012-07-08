@@ -92,7 +92,8 @@
 
         node.call(force.drag);
 
-
+		node.on("click.select", function(d) {node.style("fill", function(d) { return d3.rgb("yellow"); });
+		
         var anchorLink = vis.selectAll("line.anchorLink")
             .data(labelAnchorLinks);//.enter().append("svg:line").attr("class", "anchorLink").style("stroke", "#999");
 
